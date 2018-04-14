@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 class FormTchat extends React.Component {
 
@@ -40,6 +41,12 @@ class FormTchat extends React.Component {
             </form>
         );
     }
+
+    static propTypes = {
+      addMessage: PropTypes.func.isRequired,
+      pseudo: PropTypes.string.isRequired,
+      length: PropTypes.number.isRequired,
+    };
 }
 
 export default FormTchat;
