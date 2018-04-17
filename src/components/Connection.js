@@ -6,7 +6,7 @@ class Connection extends React.Component {
     submit = event => {
         event.preventDefault();
         const pseudo = this.pseudoInput.value;
-        this.props.history.push(`/pseudo/${pseudo}`)
+        this.props.history.push(`/ChatBox/pseudo/${pseudo}`)
     };
 
     render() {

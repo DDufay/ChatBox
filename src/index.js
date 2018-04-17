@@ -9,8 +9,8 @@ import Connection from "./components/Connection";
 ReactDOM.render((
         <Router>
             <div>
-                <Route exact  path="/" component={Connection}/>
-                <Route path="/pseudo/:pseudo" component={App}/>
+                <Route exact  path="/ChatBox/" component={Connection}/>
+                <Route path="/ChatBox/pseudo/:pseudo" component={App}/>
             </div>
         </Router>
     ),
